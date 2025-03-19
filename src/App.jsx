@@ -45,10 +45,12 @@ export default function App() {
   return (
     <div style={{ backgroundColor: bgColor }}>
       <h3>
+        <p>Todo List</p>
         <input type="text"
           className="titleWritingArea"
           style={{ backgroundColor: bgColor }}
           value={title}
+          placeholder="Write Title Here..."
           onChange={(e) => setTitle(e.target.value)}
           autoFocus
         />
